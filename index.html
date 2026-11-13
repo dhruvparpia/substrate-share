@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Private</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body { background: #150b2e; color: #fbf5e6; font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; display: grid; place-items: center; }
+  main { width: min(26rem, calc(100% - 3rem)); }
+  .mark { font: 400 2rem Georgia, serif; letter-spacing: -0.01em; margin-bottom: 2.5rem; }
+  .mark b { color: #ff4d2e; font-weight: 400; }
+  h1 { font: 400 2.4rem/1.05 Georgia, serif; margin: 0 0 0.6rem; }
+  p { margin: 0 0 1.6rem; color: #d3caef; }
+  label { display: block; font: 600 0.75rem ui-monospace, Menlo, monospace; letter-spacing: 0.18em; text-transform: uppercase; color: #9d8fd0; margin-bottom: 0.5rem; }
+  .row { display: flex; gap: 0.6rem; }
+  input { flex: 1; min-width: 0; font: inherit; padding: 0.8rem 0.9rem; border-radius: 8px; border: 1.5px solid #4a3a8c; background: #1f1244; color: inherit; }
+  input:focus-visible, button:focus-visible { outline: 3px solid #c8f03c; outline-offset: 2px; }
+  button { font: inherit; font-weight: 600; padding: 0.8rem 1.3rem; border-radius: 8px; border: 0; background: #c8f03c; color: #150b2e; cursor: pointer; }
+  button[disabled] { opacity: 0.6; cursor: progress; }
+  #msg { min-height: 1.5em; margin: 0.9rem 0 0; color: #ff8f7a; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">substrate<b>.</b></div>
+  <h1>This page is private</h1>
+  <p>Enter the password you were sent.</p>
+  <form id="f">
+    <label for="pw">Password</label>
+    <div class="row">
+      <input id="pw" type="password" autocomplete="current-password" autocapitalize="off" spellcheck="false" required>
+      <button id="go">Open</button>
+    </div>
+    <p id="msg" role="alert"></p>
+  </form>
+</main>
+<script type="application/octet-stream" id="payload">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</script>
+<script>
+(function () {
+  var SALT = 'fgfRZRn5UcpxP6eBFXHSiw==', IV = 'qEoqBUPwVd53agiA', ITER = 600000, KEY = 'substrate-share-pw';
+  var f = document.getElementById('f'), pw = document.getElementById('pw'), msg = document.getElementById('msg'), go = document.getElementById('go');
+  function bytes(b64) { var s = atob(b64), a = new Uint8Array(s.length); for (var i = 0; i < s.length; i++) a[i] = s.charCodeAt(i); return a; }
+  async function unlock(password) {
+    var enc = new TextEncoder();
+    var base = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']);
+    var key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: bytes(SALT), iterations: ITER, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+    var plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: bytes(IV) }, key, bytes(document.getElementById('payload').textContent.trim()));
+    return new TextDecoder().decode(plain);
+  }
+  async function attempt(password, quiet) {
+    go.disabled = true; msg.textContent = quiet ? '' : 'Opening…';
+    try {
+      var html = await unlock(password);
+      try { sessionStorage.setItem(KEY, password); } catch (e) {}
+      document.open(); document.write(html); document.close();
+    } catch (e) {
+      try { sessionStorage.removeItem(KEY); } catch (e2) {}
+      go.disabled = false;
+      msg.textContent = quiet ? '' : 'That password did not work. Check it and try again.';
+      pw.focus();
+    }
+  }
+  f.addEventListener('submit', function (e) { e.preventDefault(); attempt(pw.value.trim(), false); });
+  var saved = null; try { saved = sessionStorage.getItem(KEY); } catch (e) {}
+  if (saved) attempt(saved, true); else pw.focus();
+})();
+</script>
+</body>
+</html>
